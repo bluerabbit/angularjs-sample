@@ -1,12 +1,16 @@
-describe("MainCtrl", function () {
+describe('MainCtrl', function () {
+    var scope, ctrl;
 
-    it("#hello", function () {
-        var mainCtrl = new MainCtrl();
-        expect(mainCtrl.hello("World")).toEqual("Hello World");
+    beforeEach(function () {
+        scope = {};
+        ctrl = new MainCtrl(scope);
     });
 
-    it("#foo", function () {
-        var mainCtrl = new MainCtrl();
-        expect(mainCtrl.foo()).toEqual("foo");
+    it('#hello', function () {
+        expect(ctrl.hello('World')).toBe('Hello World');
+    });
+
+    it('#foo', function () {
+        expect(ctrl.foo()).toBe('foo');
     });
 });
