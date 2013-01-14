@@ -3,5 +3,5 @@ angularjs-sample
 
 Angularjs-sample
 
-% brew install jsl
-% npm install
+- brew install jsl
+- npm install
