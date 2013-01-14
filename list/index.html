@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <script src="../lib/angular-1.0.3.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<div ng-controller="mainCtrl">
+    <p>String#length:{{users.length}}</p>
+    <p><input type="text" ng-model="query.name"></p>
+    <ul>
+        <li ng-repeat="user in users|filter:query|limitTo:3|orderBy:'-score'">
+            {{user.name|uppercase}} {{user.score|number:4}}
+        </li>
+    </ul>
+</div>
+</body>
+</html>
+
