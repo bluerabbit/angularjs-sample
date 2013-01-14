@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <script src="../lib/angular-1.0.3.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+<div ng-controller="MainCtrl">
+    <p><input type="button" value="get" ng-click="getRequest()"></p>
+    <p>{{get_response}}</p>
+    <p><input type="button" value="post" ng-click="postRequest()"></p>
+    <p>{{post_response}}</p>
+</div>
+</body>
+</html>
