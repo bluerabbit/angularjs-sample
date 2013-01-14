@@ -1,4 +1,4 @@
-var mainCtrl = function ($scope) {
+var ListCtrl = function ($scope) {
     $scope.users = [
         {"name": "taguchi", "score": 52.22},
         {"name": "tanaka", "score": 38.22},
@@ -10,5 +10,4 @@ var mainCtrl = function ($scope) {
         {"name": "yanagi", "score": 72.2}
     ];
 };
-
 

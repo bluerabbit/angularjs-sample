@@ -8,16 +8,18 @@ basePath = '';
 
 // list of files / patterns to load in the browser
 files = [
-  JASMINE,
-  JASMINE_ADAPTER,
-  'testing/controllers.js',
-  'testing/controllers_test.js'
+    JASMINE,
+    JASMINE_ADAPTER,
+    'list/index.js',
+    'list/index_test.js',
+    'testing/controllers.js',
+    'testing/controllers_test.js'
 ];
 
 
 // list of files to exclude
 exclude = [
-  
+
 ];
 
 

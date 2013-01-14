@@ -6,11 +6,11 @@
     <script src="index.js"></script>
 </head>
 <body>
-<div ng-controller="mainCtrl">
+<div ng-controller="ListCtrl">
     <p>String#length:{{users.length}}</p>
     <p><input type="text" ng-model="query.name"></p>
     <ul>
-        <li ng-repeat="user in users|filter:query|limitTo:3|orderBy:'-score'">
+        <li class="users" ng-repeat="user in users|filter:query|limitTo:3|orderBy:'-score'">
             {{user.name|uppercase}} {{user.score|number:4}}
         </li>
     </ul>
