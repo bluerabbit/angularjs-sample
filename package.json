@@ -1,0 +1,11 @@
+{
+  "name": "angularjs-sample",
+  "description": "AngularJS Study Project",
+  "version": "0.0.1",
+  "dependencies": {
+    "testacular": "*"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  }
+}
